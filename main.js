@@ -1,9 +1,11 @@
 function printFibonnacci() {
-    var fib = [0, 1];
-    for (var i = 2; i < 10; i++) {
-        fib[i] = fib[i - 1] + fib[i - 2];
+    let x = 0, y = 1, z;
+    for (let i = 0; i < 10; i++) {
+        console.log(x);
+        z = x + y;
+        x = y;
+        y = z;
     }
-    console.log(fib);
 }
 
 printFibonnacci();
